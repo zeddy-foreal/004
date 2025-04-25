@@ -83,3 +83,8 @@ i{
         height: 50%;
     }
 }
+@media (max-width:310px) {
+    .container{
+        height: 40%;
+    }
+}
