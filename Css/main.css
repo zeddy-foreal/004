@@ -72,19 +72,31 @@ i{
     .container{
         height: 70%;
     }
+    .container > div{
+        font-size:100px;
+    }
 }
 @media (max-width:450px) {
     .container{
         height: 65%;
+    }
+        .container > div{
+        font-size:90px;
     }
 }
 @media (max-width:410px) {
     .container{
         height: 50%;
     }
+        .container > div{
+        font-size:70px;
+    }
 }
 @media (max-width:310px) {
     .container{
         height: 40%;
+    }
+        .container > div{
+        font-size:65px;
     }
 }
