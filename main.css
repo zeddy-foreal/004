@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "myfont";
+    src: url(xD.ttf);
+}
+:root{
+    --body: #3D0301;
+    --background: #000000;
+    --color1: #D76C82;
+    --color2:#B03052;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: "myfont";
+    color: #EBE8DB;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--body);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container{
+    width: 40%;
+    border-radius: 7px;
+    aspect-ratio: 1/1;
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: repeat(3,calc(100%/3));
+    grid-template-rows: repeat(3,calc(100%/3));
+    gap: 2px;
+    overflow: hidden;
+}
+.container > div{
+    background-color: var(--color1);
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    cursor: pointer;;
+}
+.container > div:hover{
+    background-color: var(--color2);
+}
+.scores{
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 65px;
+}
+.scores .fa-hand{
+    opacity: 0;
+}
+i{
+    transition: 0.3s;
+}
+@media (max-width:850px) {
+    .container{
+        width: 50%;
+    }
+        .container > div{
+        font-size:60px;
+    }
+}
+@media (max-width:410px) {
+    .container{
+        width: 55%;
+    }
+        .container > div{
+        font-size:50px;
+    }
+}
+@media (max-width:310px) {
+    .container{
+        width: 65%;
+    }
+        .container > div{
+        font-size:35px;
+    }
+}
+@media (max-width:190px) {
+    .container{
+        width: 75%;
+    }
+}
