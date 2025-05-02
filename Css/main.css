@@ -65,7 +65,7 @@ i{
 }
 @media (max-width:850px) {
     .container{
-        width: 60%;
+        width: 75%;
     }
         .container > div{
         font-size:60px;
@@ -84,11 +84,6 @@ i{
         width: 80%;
     }
         .container > div{
-        font-size:40px;
-    }
-}
-@media (max-width:190px) {
-    .container{
-        width: 80%;
+        font-size:35px;
     }
 }
