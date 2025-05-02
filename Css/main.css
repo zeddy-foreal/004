@@ -26,7 +26,7 @@ body{
     align-items: center;
 }
 .container{
-    height: 90%;
+    width: 40%;
     border-radius: 7px;
     aspect-ratio: 1/1;
     background-color: var(--background);
@@ -42,7 +42,7 @@ body{
 ;
     justify-content: center;
     align-items: center;
-    font-size: 150px;
+    font-size: 90px;
     cursor: pointer;;
 }
 .container > div:hover{
@@ -63,49 +63,32 @@ body{
 i{
     transition: 0.3s;
 }
-@media (max-width:590px) {
+@media (max-width:850px) {
     .container{
-        height: 80%;
-    }
-}
-@media (max-width:530px) {
-    .container{
-        height: 70%;
-    }
-    .container > div{
-        font-size:100px;
-    }
-}
-@media (max-width:450px) {
-    .container{
-        height: 65%;
+        width: 50%;
     }
         .container > div{
-        font-size:90px;
+        font-size:60px;
     }
 }
 @media (max-width:410px) {
     .container{
-        height: 40%;
+        width: 55%;
     }
         .container > div{
-        font-size:70px;
+        font-size:50px;
     }
 }
 @media (max-width:310px) {
     .container{
-        height: 30%;
+        width: 65%;
     }
         .container > div{
-        font-size:65px;
+        font-size:35px;
     }
 }
 @media (max-width:190px) {
     .container{
-        height: 25%;
-    }
-        .container > div{
-        font-size:45px;
+        width: 75%;
     }
 }
-
