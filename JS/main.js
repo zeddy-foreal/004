@@ -1,6 +1,6 @@
 let x = `<i class="fa-solid fa-x"></i>`;
 let o = `<i class="fa-solid fa-o"></i>`;
-let squares = document.querySelectorAll(".container > div");
+let squares = document.querySelectorAll("section > div");
 let starter = "";
 let turn = ""
 let hands = document.querySelectorAll(".fa-hand")
